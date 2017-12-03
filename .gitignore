@@ -1,0 +1,4 @@
+node_modules/
+doody*
+.env
+test.js
