@@ -17,7 +17,7 @@ const randomCaps = input => {
   }
 
   const out = inputArray.join('');
-  var re = /#maga/gi
+  var re = /#maga/gi 
   return out.replace(re,'#MAGAis4assholes');
 }
 
@@ -51,7 +51,7 @@ const reply = (tweetId) => {
     return replyToTweet(tweet.user.screen_name, tweetId, tweet.full_text);
   })
   .then(id => {
-    console.log(`tweeted reply`, id);
+    console.log(`${Date()} tweeted reply`, id);
   })
   .catch(err => console.error('error:', err));
 };
