@@ -16,7 +16,9 @@ const randomCaps = input => {
     inputArray[i] = upper ? inputArray[i].toUpperCase() : inputArray[i].toLowerCase();
   }
 
-  return inputArray.join('');
+  const out = inputArray.join('');
+  var re = /#maga/gi
+  return out.replace(re,'#MAGAis4assholes');
 }
 
 const getTweetText = (id) => {
