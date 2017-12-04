@@ -51,9 +51,9 @@ const reply = (tweetId) => {
     return replyToTweet(tweet.user.screen_name, tweetId, tweet.full_text);
   })
   .then(id => {
-    console.log(`${Date()} tweeted reply`, id);
+    console.log(chalk.green((`${Date()} tweeted reply ${id}`)));
   })
-  .catch(err => console.error('error:', err));
+  .catch(err => console.log(chalk.red(`${Date()} error: ${JSON.stringify(err)}`)));
 };
 
 module.exports = streamFilter;

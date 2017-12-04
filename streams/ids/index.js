@@ -5,10 +5,6 @@ var streamIDs = {
       id: '25073877'
     },
     {
-      name: 'donna warren',
-      id: '2922345639'
-    },
-    {
       name: 'eric trump',
       id: '39349894'
     },
